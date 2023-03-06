@@ -5,7 +5,7 @@ const path = require('path');
 // const bodyParser = require('body-parser');
 const cors = require('cors');
 const querystring = require('querystring');
-console.log(process.env.CLIENT_ID);
+// console.log(process.env.CLIENT_ID);
 const app = express();
 
 app.use(cors());
