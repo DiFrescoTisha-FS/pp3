@@ -1,17 +1,16 @@
 
 import './index.css';
-import Header from './components/Nav';
+// import Header from './components/Header';
+import { Routes, Route } from 'react-router-dom'
+import { Home, Login } from './components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Header />
-
-        <a className="App-link text-[#fff] decoration-none" href="http://localhost:8888/login">
-          Log in to Spotify
-        </a>
-      </header>
+    <div className="w-screen h-screen bg-[#010606]">
+      <Routes>
+        <Route path="/login" element={<Login />} />          
+        <Route path="/*" element={<Home />} />          
+      </Routes>
     </div>
   );
 }
